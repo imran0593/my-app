@@ -1,0 +1,8 @@
+
+<div *ngFor="let gmail of Gmails" [ngClass]="{'visited':gmail.completed==true,
+'unvisited':gmail.completed==false}">
+    <p>{{gmail.userid}}</p>
+    <p>{{gmail.id}}</p>
+    <p>{{gmail.title}}</p>
+    <p>{{gmail.completed}}</p>
+</div>

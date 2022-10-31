@@ -1,0 +1,22 @@
+<p>cars works!</p>
+<label>company</label>
+<input type="radio" name="company" value="honda" [(ngModel)]="company">
+<label>honda</label>
+<input type="radio" name="company" value="bmw" [(ngModel)]="company">
+<label>audi</label>
+<input type="radio" name="company" value="audi" [(ngModel)]="company">
+<label>bmw</label>
+<br>
+<h1>{{ company }}</h1>
+<img *ngIf="company=='honda'" src="https://gaadiwaadi.com/wp-content/uploads/2020/02/2020-honda-city-rear-1.jpg" height="30%" width="30%">
+<br>
+<img  *ngIf="company=='bmw'" src="https://imgd-ct.aeplcdn.com/1200x900/cw/ec/37410/Audi-New-A8-L-Exterior-170120.jpg?wm=0&q=75" height="30%" width="30%">
+<br>
+<img  *ngIf="company=='audi'" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2JG8-DlNG7uv8a53MJT0VuqYJxrk2g-oSQw&usqp=CAU" height="30%" width="30%">
+
+
+
+
+
+
+

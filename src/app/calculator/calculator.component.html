@@ -1,0 +1,15 @@
+<h1>calculator</h1>
+<label>Number1: </label>
+<input type="number" [(ngModel)]="number1">
+<br>
+
+<label>Number2:</label>
+<input type="number" [(ngModel)]="number2">
+<br>
+
+<button (click)="add()"></button>
+<button>sub</button>
+<button>mul</button>
+<button>div</button>
+
+<h1>Result is:{{ result }} </h1>

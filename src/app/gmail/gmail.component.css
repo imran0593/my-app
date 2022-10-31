@@ -1,0 +1,13 @@
+div:hover{
+    background-color: pink;
+    cursor: pointer;
+    box-shadow: 8px 5px 5px red;
+    border-radius: 10px;
+}
+div{
+    display: block;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    
+}

@@ -1,0 +1,91 @@
+<nav class="navbar" navbar-light bg-primary>
+    <div class="container-fluid">
+    <h2>Restaurent Record</h2>
+    <div class="cls">
+        <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Add Restaurent</button>
+    </div> 
+    </div>
+</nav>
+<div class="back p-5 my-3">
+    <h1>Restaurent Records Management</h1>
+    <p>You can save Records of Restaurent using Angular 12</p>
+    <a class="btn btn-primary"target="_Blanck" href="https://www.justdial.com/Hyderabad/Restaurants-in-Aoc-Records/nct-10408936">Click Here</a>
+</div>
+<!--Table shown here-->
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scope="col">Restaurent</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Services</th>
+            <th scope="col">Action</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>1</td>
+            <td>Imran</td>
+            <td>ikhan0593@gmailcom</td>
+            <td>9000850391</td>
+            <td>karimnagar</td>
+            <td>Timber</td>
+            <td>
+                <button class="btn btn-info">Edit</button>&nbsp;
+                <button class="btn btn-danger"> Delete</button>
+            </td>
+        </tr>
+     </tbody>
+</table>
+<!-- Button trigger modal -->
+ <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Restaurent Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputName">Name</label>
+                  <input type="email" formControlName="name" class="form-control" placeholder="Restaurent Name Here">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1">Email</label>
+                  <input type="password" formControlEmail="email" class="form-control" placeholder="Enter Email Address" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1">Mobile</label>
+                    <input type="password" formControlMobile="mobile" class="form-control" placeholder="Enter Mobile Number" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1">Address</label>
+                    <input type="password" formControlAddress="address" class="form-control" placeholder="Enter Address" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1">Services</label>
+                    <input type="password" formControlServices="services" class="form-control" placeholder="Enter Services" id="exampleInputPassword1">
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
